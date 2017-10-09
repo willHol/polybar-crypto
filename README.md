@@ -1,5 +1,5 @@
 # polybar-crypto
-A polybar script that displays the price of various crypto-currencies.
+A *polybar script* that displays the price of various **crypto-currencies**.
 
 
 
