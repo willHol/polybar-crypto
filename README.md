@@ -14,6 +14,24 @@ git clone https://github.com/willHol/polybar-crypto.git &&
     cp ./{crypto-config,crypto.py} ~/.config/polybar
 ```
 
+Then:
+
+```
+[bar/top]
+
+...
+
+modules-right = crypto
+
+...
+
+[module/crypto]
+type = custom/script
+interval = 300
+exec = /home/<user>/.config/polybar/crypto.py
+
+```
+
 ## Dependencies
 The [cryptocoins](https://github.com/allienworks/cryptocoins) *icon font* is used in the screenshots, though you are free to use any other font.
 
