@@ -15,7 +15,7 @@ git clone https://github.com/willHol/polybar-crypto.git &&
 ```
 # Example Configuration
 
-`crypto-config`
+`~/.config/polybar/crypto-config`
 ```
 [general]
 base_currency = NZD
