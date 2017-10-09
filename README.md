@@ -9,12 +9,13 @@ A polybar script that displays the price of various crypto-currencies.
 
 # Setup
 ```
-git clone https://github.com/willHol/polybar-crypto.git
-    && cd polybar-crypto
-    && cp ./{config,cryto.py} ~/.config/polybar
+git clone https://github.com/willHol/polybar-crypto.git &&
+    cd polybar-crypto &&
+    cp ./{config,cryto.py} ~/.config/polybar
 ```
 # Example Configuration
 
+`crypto-config`
 ```
 [general]
 base_currency = NZD
