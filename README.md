@@ -10,3 +10,26 @@ A polybar script that displays the price of various crypto-currencies.
 # Setup
 
     git clone https://github.com/willHol/polybar-crypto.git && cd polybar-crypto && cp ./{config,cryto.py} ~/.config/polybar
+
+# Example Configuration
+
+```
+[general]
+base_currency = NZD
+display = percentage
+
+[bitcoin]
+icon = 
+
+[ethereum]
+icon = 
+
+[litecoin]
+icon = 
+
+[ardor]
+icon = 
+
+[NEO]
+icon = 
+```
