@@ -13,6 +13,20 @@ git clone https://github.com/willHol/polybar-crypto.git &&
     cd polybar-crypto &&
     cp ./{crypto-config,crypto.py} ~/.config/polybar
 ```
+
+## Dependencies
+The [cryptocoins](https://github.com/allienworks/cryptocoins) *icon font* is used in the screenshots, though you are free to use any other font.
+
+If using the **cryptocoins** icon font, ensure that the following line is present in your `~/.config/polybar/config`:
+
+```
+[bar/top]
+
+...
+
+font-0 = cryptocoins:style=Regular;0
+```
+
 # Example Configuration
 
 `~/.config/polybar/crypto-config`
@@ -36,3 +50,17 @@ icon = 
 [NEO]
 icon = 
 ```
+
+## Display Modes
+
+`display = price`
+
+![screen](https://user-images.githubusercontent.com/24377188/31331319-4ef14406-ad3e-11e7-9242-12440ef96774.jpg)
+
+`display = percentage`
+
+![screen](https://user-images.githubusercontent.com/24377188/31331342-65e40428-ad3e-11e7-88e0-3b87921805c7.jpg)
+
+`display = both`
+
+![screen](https://user-images.githubusercontent.com/24377188/31331368-80faac76-ad3e-11e7-9977-e86b1eebe401.jpg)
