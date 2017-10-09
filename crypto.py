@@ -26,8 +26,8 @@ for currency in currencies:
 
 	display_opt = config['general']['display']
 	if display_opt == 'both' or display_opt == None:
-		sys.stdout.write(f'{icon}  {local_price}/{change_24:+}%   ')
+		sys.stdout.write(f'{icon} {local_price}/{change_24:+}%  ')
 	elif display_opt == 'percentage':
-		sys.stdout.write(f'{icon}  {change_24:+}%   ')
+		sys.stdout.write(f'{icon} {change_24:+}%  ')
 	elif display_opt == 'price':
-		sys.stdout.write(f'{icon}  {local_price}   ')
+		sys.stdout.write(f'{icon} {local_price}  ')
