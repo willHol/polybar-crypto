@@ -14,7 +14,7 @@ git clone https://github.com/willHol/polybar-crypto.git &&
     cp ./{crypto-config,crypto.py} ~/.config/polybar
 ```
 
-Then:
+Then in `~/.config/polybar/config`:
 
 ```
 [bar/top]
