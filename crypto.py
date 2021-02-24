@@ -19,10 +19,10 @@ params = {'convert': base_currency}
 
 for currency in currencies:
 	icon = config[currency]['icon']
-	json = requests.get(f'https://api.coinmarketcap.com/v1/ticker/{currency}',
-					 	params=params).json()[0]
-	local_price = round(Decimal(json[f'price_{base_currency.lower()}']), 2)
-	change_24 = float(json['percent_change_24h'])
+	json = requests.get(f'https://api.coingecko.com/api/v3/coins/{currency}',
+					 	).json()["market_data"]
+	local_price = round(Decimal(json["current_price"][f'{base_currency.lower()}']), 2)
+	change_24 = float(json['price_change_percentage_24h'])
 
 	display_opt = config['general']['display']
 	if display_opt == 'both' or display_opt == None:
