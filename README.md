@@ -11,7 +11,9 @@ A *polybar script* that displays the price of various **crypto-currencies**.
 ```
 git clone https://github.com/willHol/polybar-crypto.git &&
     cd polybar-crypto &&
-    cp ./{crypto-config,crypto.py} ~/.config/polybar
+    mkdir -p ~/.config/polybar &&
+    cp ./{crypto-config,crypto.py} ~/.config/polybar &&
+    sudo chmod u+x ~/.config/polybar/crypto.py
 ```
 
 Then in `~/.config/polybar/config`:
