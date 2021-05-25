@@ -4,11 +4,12 @@ import configparser
 import sys
 import requests
 from decimal import Decimal
+from os.path import expanduser
 
 config = configparser.ConfigParser()
 
 # File must be opened with utf-8 explicitly
-with open('~/.config/polybar/crypto-config', 'r', encoding='utf-8') as f:
+with open(expanduser('~/.config/polybar/crypto-config'), 'r', encoding='utf-8') as f:
 	config.read_file(f)
 
 # Everything except the general section
